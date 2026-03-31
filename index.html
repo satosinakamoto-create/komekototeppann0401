@@ -1,0 +1,321 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>米粉と鉄板｜目黒区学芸大学</title>
+    <meta
+      name="description"
+      content="米粉と鉄板の公式サイト。広島風お好み焼き・米粉たこ焼き・鉄板おつまみ。学芸大学駅徒歩5分。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      if (sessionStorage.getItem("splashShown")) {
+        document.documentElement.classList.add("splash-done");
+      }
+    </script>
+    <script src="slider.js" defer></script>
+    <script src="map.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMw2kqFyGSSBOcKwNo52Xp0PoI2Cezks8&callback=initMap"
+      async
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <!-- Splash Screen -->
+    <div class="splash" aria-hidden="true">
+      <div class="splash-logo">
+        <img src="images/ろご.jpg" alt="" />
+        <span>米粉と鉄板</span>
+        <p class="splash-sub">KOMEKO TO TEPPAN</p>
+      </div>
+    </div>
+
+    <a class="skip-link" href="#main">本文へスキップ</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="site-logo">
+          <a class="brand" href="index.html" aria-label="トップへ">
+            <img class="brand-mark" src="images/logo.jpg" alt="米粉と鉄板" />
+            <span class="brand-name">米粉と鉄板</span>
+          </a>
+        </div>
+        <nav class="site-nav" aria-label="グローバルナビゲーション">
+          <a class="nav-link" href="index.html" aria-current="page">こだわり</a>
+          <a class="nav-link" href="menu.html">メニュー</a>
+          <a class="nav-link" href="hours.html">営業時間</a>
+          <a class="nav-link" href="info.html">店舗情報</a>
+          <a class="nav-link" href="news.html">お知らせ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ===== HERO ===== -->
+      <section class="hero" aria-label="メインビジュアル">
+        <div class="container">
+          <!-- コピー -->
+          <div class="hero-copy">
+            <p class="eyebrow">学芸大学 ／ 鉄板料理</p>
+            <h1 class="hero-title">米粉の生地で<br />つくる、鉄板の喜び。</h1>
+            <p class="hero-lead">
+              グルテンフリーの米粉生地で焼き上げる広島風お好み焼きと、選べる8種のたこ焼き。
+              こだわりの鉄板おつまみとクラフトジンをどうぞ。
+            </p>
+          </div>
+
+          <!-- スライダー：全幅・max 1080px -->
+          <div class="hero-slider-wrap">
+            <div class="hero-slider" aria-label="料理写真スライドショー">
+              <input
+                class="slider-radio"
+                type="radio"
+                name="heroSlider"
+                id="slide-1"
+                checked
+              />
+              <input
+                class="slider-radio"
+                type="radio"
+                name="heroSlider"
+                id="slide-2"
+              />
+              <input
+                class="slider-radio"
+                type="radio"
+                name="heroSlider"
+                id="slide-3"
+              />
+              <input
+                class="slider-radio"
+                type="radio"
+                name="heroSlider"
+                id="slide-4"
+              />
+              <input
+                class="slider-radio"
+                type="radio"
+                name="heroSlider"
+                id="slide-5"
+              />
+
+              <!-- ビューポート＋左右オーバーレイボタン -->
+              <div class="slider-visual">
+                <div class="slider-viewport">
+                  <div class="slider-track">
+                    <figure
+                      class="slide slide-1"
+                      role="group"
+                      aria-label="1 / 5"
+                    ></figure>
+                    <figure
+                      class="slide slide-2"
+                      role="group"
+                      aria-label="2 / 5"
+                    ></figure>
+                    <figure
+                      class="slide slide-3"
+                      role="group"
+                      aria-label="3 / 5"
+                    ></figure>
+                    <figure
+                      class="slide slide-4"
+                      role="group"
+                      aria-label="4 / 5"
+                    ></figure>
+                    <figure
+                      class="slide slide-5"
+                      role="group"
+                      aria-label="5 / 5"
+                    ></figure>
+                  </div>
+                </div>
+                <button
+                  class="slider-btn slider-btn--prev"
+                  type="button"
+                  data-dir="-1"
+                  aria-label="前へ"
+                >
+                  ‹
+                </button>
+                <button
+                  class="slider-btn slider-btn--next"
+                  type="button"
+                  data-dir="1"
+                  aria-label="次へ"
+                >
+                  ›
+                </button>
+              </div>
+
+              <!-- ドット -->
+              <div class="slider-dots" role="tablist" aria-label="スライド選択">
+                <label
+                  class="dot"
+                  for="slide-1"
+                  role="tab"
+                  aria-label="1枚目へ"
+                ></label>
+                <label
+                  class="dot"
+                  for="slide-2"
+                  role="tab"
+                  aria-label="2枚目へ"
+                ></label>
+                <label
+                  class="dot"
+                  for="slide-3"
+                  role="tab"
+                  aria-label="3枚目へ"
+                ></label>
+                <label
+                  class="dot"
+                  for="slide-4"
+                  role="tab"
+                  aria-label="4枚目へ"
+                ></label>
+                <label
+                  class="dot"
+                  for="slide-5"
+                  role="tab"
+                  aria-label="5枚目へ"
+                ></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== RECOMMENDED MENU ===== -->
+      <section class="section" aria-labelledby="menu-title">
+        <div class="container">
+          <header class="section-head">
+            <div class="amber-rule"><span>MENU</span></div>
+            <h2 id="menu-title" class="section-title">おすすめメニュー</h2>
+            <p class="section-lead">米粉生地の軽さと鉄板の香ばしさをぜひ。</p>
+          </header>
+
+          <div class="menu-grid">
+            <article class="osusume-menu-card">
+              <div class="media">
+                <img src="images/DSC06338.JPG" alt="米粉たこ焼き" />
+              </div>
+              <div class="menu-body">
+                <h3 class="menu-name">選べる米粉たこ焼き</h3>
+                <p class="menu-desc">
+                  8種の味から選べる。外はカリッと中はとろり。グルテンフリーの米粉生地。
+                </p>
+                <p class="menu-price">¥991〜</p>
+              </div>
+            </article>
+
+            <article class="osusume-menu-card">
+              <div class="media">
+                <img src="images/slide3.jpg" alt="広島風お好み焼き" />
+              </div>
+              <div class="menu-body">
+                <h3 class="menu-name">広島風お好み焼き</h3>
+                <p class="menu-desc">
+                  国産米粉を重ねた本場広島スタイル。肉玉・牡蠣など数種をご用意。
+                </p>
+                <p class="menu-price">¥982〜</p>
+              </div>
+            </article>
+
+            <article class="osusume-menu-card">
+              <div class="media">
+                <img src="images/DSC06405.JPG" alt="鉄板おつまみ" />
+              </div>
+              <div class="menu-body">
+                <h3 class="menu-name">鉄板おつまみ</h3>
+                <p class="menu-desc">黒毛和牛ホルモン、鉄板ならではの一品。</p>
+                <p class="menu-price">¥755〜</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ACCESS（住所・営業時間・定休日を統合） ===== -->
+      <section id="access" class="section" aria-labelledby="access-title">
+        <div class="container">
+          <header class="section-head">
+            <div class="amber-rule"><span>ACCESS</span></div>
+            <h2 id="access-title" class="section-title">アクセス</h2>
+          </header>
+
+          <div class="access-grid">
+            <div class="map-box">
+              <div id="map" style="width: 100%; height: 100%"></div>
+            </div>
+
+            <div class="access-text">
+              <dl class="info-list">
+                <div class="info-item">
+                  <dt>住所</dt>
+                  <dd>東京都目黒区鷹番2丁目21-19<br />学大横丁</dd>
+                </div>
+                <div class="info-item">
+                  <dt>営業時間</dt>
+                  <dd>
+                    平日　18:00–26:00<br />
+                    土曜　15:00–26:00<br />
+                    日祝　15:00–22:00
+                  </dd>
+                </div>
+                <div class="info-item">
+                  <dt>定休日</dt>
+                  <dd>月曜日</dd>
+                </div>
+                <div class="info-item">
+                  <dt>最寄り駅</dt>
+                  <dd>東急東横線「学芸大学駅」東口<br />徒歩約5分</dd>
+                </div>
+                <div class="info-item">
+                  <dt>駐車場</dt>
+                  <dd>なし（近隣コインパーキングをご利用ください）</dd>
+                </div>
+              </dl>
+              <div class="section-cta left" style="margin-top: 16px">
+                <a
+                  class="btn btn-primary"
+                  href="https://www.google.com/maps/dir/?api=1&destination=35.63072,139.68640"
+                  target="_blank"
+                  rel="noopener"
+                  >Google マップで開く</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© 2026 米粉と鉄板. All Rights Reserved.</small>
+        <div class="footer-links">
+          <a href="news.html">お知らせ</a>
+          <a href="info.html">店舗情報</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener("load", () => {
+        if (!sessionStorage.getItem("splashShown")) {
+          sessionStorage.setItem("splashShown", "1");
+          setTimeout(() => {
+            document.querySelector(".splash")?.remove();
+          }, 3600);
+        }
+      });
+    </script>
+  </body>
+</html>

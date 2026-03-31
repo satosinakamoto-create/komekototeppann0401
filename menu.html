@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>メニュー｜米粉と鉄板</title>
+        <meta
+        name="description"
+        content="米粉と鉄板のメニュー。鉄板焼き、おつまみ、ドリンクをご用意しています。"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+          /* PC: style.cssの height:60px を上書きして左列の高さに合わせて伸ばす */
+          .menu-top-grid .tab-hero {
+            height: auto;
+            min-height: unset;
+          }
+
+          /* スマホ: 縦積み → テキスト&タブが上、画像がフル幅で下 */
+          @media (max-width: 560px) {
+            .menu-top-grid {
+              grid-template-columns: 1fr;
+              gap: 12px;
+            }
+            .menu-top-grid .tab-hero {
+              width: 100%;
+              height: 220px;
+            }
+          }
+        </style>
+    </head>
+    
+    <body>
+        <a class="skip-link" href="#main">本文へスキップ</a>
+        
+        <header class="site-header">
+            <div class="container header-inner">
+                <div class="site-logo">
+                    <a class="brand" href="index.html" aria-label="トップへ">
+                        <img class="brand-mark" src="images/logo.jpg" alt="米粉と鉄板" />
+                        <span class="brand-name">米粉と鉄板</span>
+                    </a>
+                </div>
+                
+                <nav class="site-nav" aria-label="グローバルナビゲーション">
+                    <a class="nav-link" href="index.html">こだわり</a>
+                    <a class="nav-link" href="menu.html" aria-current="page">メニュー</a>
+                    <a class="nav-link" href="hours.html">営業時間</a>
+                    <a class="nav-link" href="info.html">店舗情報</a>
+                    <a class="nav-link" href="news.html">お知らせ</a>
+                </nav>
+            </div>
+        </header>
+        
+        
+        <main id="main">
+            <section class="section">
+                <div class="container">
+                    <div class="menu-tabs">
+                        <input class="tab-radio" type="radio" name="menuTab" id="tab-food" checked/>
+                        <input class="tab-radio" type="radio" name="menuTab" id="tab-drink" />
+
+                    <div class="menu-top-grid">
+                      <div class="menu-top-left">
+                        <header class="section-head">
+                            <h1 class="section-title">メニュー</h1>
+                            <p class="section-lead">価格は税込表記です。</p>
+                        </header>
+                        <div class="tab-head" role="tablist" aria-label="メニュー切り替え">
+                          <label class="tab-btn" for="tab-food" role="tab" aria-controls="panel-food">フード</label>
+                          <label class="tab-btn" for="tab-drink" role="tab" aria-controls="panel-drink">ドリンク</label>
+                        </div>
+                      </div>
+                      <div class="tab-hero" aria-hidden="true">
+                        <img class="tab-hero-img tab-hero--food" src="images/food_img.jpg" alt="フードメニューイメージ">
+                        <img class="tab-hero-img tab-hero--drink" src="images/drink_img.jpg" alt="ドリンクメニューイメージ">
+                      </div>
+                    </div>
+                    
+                
+                        <section id="panel-food" class="tab-panel" role="tabpanel">
+                            <div class="menu-grid-2col">
+                                <!-- 一品 -->
+                                <section class="menu-card">
+                                        <h2 class="menu-card-title">一品</h2>
+                                        <dl class="menu-dl">
+                                            <div class="menu-row">
+                                                <dt>たこのねぎまみれ</dt>
+                                                <dd>¥500</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>冷やしトマト</dt>
+                                                <dd>¥500</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>ゆでねぎたま</dt>
+                                                <dd>¥500</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>手仕込 特製ポテサラ</dt>
+                                                <dd>¥600</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>ピリ辛豆板醤きゅうり</dt>
+                                                <dd>¥400</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>季節野菜の旬サラダ（S）</dt>
+                                                <dd>¥755</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>季節野菜の旬サラダ（L）</dt>
+                                                <dd>¥1,300</dd>
+                                            </div>
+                                        </dl>
+                                    </section>
+                                    
+                                    <!-- 鉄板焼き -->
+                                    <section class="menu-card">
+                                        <h2 class="menu-card-title">鉄板焼き</h2>
+                                        <dl class="menu-dl">
+                                            <div class="menu-row">
+                                                <dt>鉄板いかげそ焼き</dt>
+                                                <dd>¥800</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>鉄板わかめ炒め</dt>
+                                                <dd>¥582</dd>
+                                            </div>
+                                        </dl>
+                                    </section>
+                                    
+                                    <!-- 広島風お好み焼き -->
+                                    <section class="menu-card">
+                                        <h2 class="menu-card-title">広島風お好み焼き</h2>
+                                        <dl class="menu-dl">
+                                            <div class="menu-row">
+                                                <dt>肉玉米粉そば</dt>
+                                                <dd>¥982</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>ねぎたっぷり米粉そば</dt>
+                                                <dd>¥1,200</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>牡蠣と豚肉</dt>
+                                                <dd>¥1,500</dd>
+                                            </div>
+                                        </dl>
+                                    </section>
+                                    
+                                    <!-- おつまみ -->
+                                    <section class="menu-card">
+                                        <h2 class="menu-card-title">鉄板おつまみ</h2>
+                                        <dl class="menu-dl">
+                                            <div class="menu-row">
+                                                <dt>アンチョビブロッコリー</dt>
+                                                <dd>¥755</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>鉄板ジャークチキン</dt>
+                                                <dd>¥1,200</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>きのことチーズのオムレツ</dt>
+                                                <dd>¥891</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>鉄板チョリソー</dt>
+                                                <dd>¥800</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>鶏せせりとねぎの黒胡椒焼</dt>
+                                                <dd>¥800</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>黒毛和牛上ホルモン焼</dt>
+                                                <dd>¥991</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>極厚！とんぺい焼</dt>
+                                                <dd>¥1,273</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>たこときのこの塩だれ</dt>
+                                                <dd>¥800</dd>
+                                            </div>
+                                        </dl>
+                                    </section>
+                                    
+                                    <!-- たこ焼き -->
+                                    <section class="menu-card menu-card--full">
+                                        <h2 class="menu-card-title">選べる米粉たこ焼き</h2>
+                                        
+                                        <h3 class="menu-subtitle">味</h3>
+                                        <ul class="taste-tags" aria-label="味のバリエーション">
+                                            <li>ソース</li>
+                                            <li>ごま油＆塩</li>
+                                            <li>ピリ辛出汁</li>
+                                            <li>出汁醤油</li>
+                                            <li>ネギマヨ</li>
+                                            <li>ネギポン酢</li>
+                                            <li>薬油七味</li>
+                                            <li>トリュフ塩</li>
+                                        </ul>
+                                        
+                                        <h3 class="menu-subtitle">組み合わせ</h3>
+                                        <dl class="menu-dl">
+                                            <div class="menu-row">
+                                                <dt>たこ焼 2個×4種</dt>
+                                                <dd>¥991</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>たこ焼 3個×3種</dt>
+                                                <dd>¥1,100</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>たこ焼 4個×3種</dt>
+                                                <dd>¥1,400</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>たこ焼 4個×4種</dt>
+                                                <dd>¥1,873</dd>
+                                            </div>
+                                        </dl>
+                                    </section>
+                                    
+                                    <!-- 数量限定 -->
+                                    <section class="menu-card">
+                                        <h2 class="menu-card-title">数量限定 鉄板焼き</h2>
+                                        <dl class="menu-dl">
+                                            <div class="menu-row">
+                                                <dt>国産豚ロースステーキ（150g）</dt>
+                                                <dd>¥1,680</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>国産牛サーロインステーキ（120g）</dt>
+                                                <dd>¥2,800</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>国産牛赤身ステーキ（120g）</dt>
+                                                <dd>¥1,980</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>マテ貝鉄板焼き</dt>
+                                                <dd>（要確認）</dd>
+                                            </div>
+                                        </dl>
+                                    </section>
+                                    
+                                    <!-- 鉄板めし -->
+                                    <section class="menu-card">
+                                        <h2 class="menu-card-title">鉄板めし</h2>
+                                        <dl class="menu-dl">
+                                            <div class="menu-row">
+                                                <dt>米粉麺ソース焼きそば</dt>
+                                                <dd>¥900</dd>
+                                            </div>
+                                            <div class="menu-row">
+                                                <dt>鉄板焼きうどん</dt>
+                                                <dd>¥900</dd>
+                                            </div>
+                                        </dl>
+                                    </section>
+                                    
+                                    <!-- 甘味 -->
+                                    <section class="menu-card">
+                                        <h2 class="menu-card-title">甘味</h2>
+                                        <dl class="menu-dl">
+                                            <div class="menu-row">
+                                                <dt>本日のおすすめアイス</dt>
+                                                <dd>¥364</dd>
+                                            </div>
+                                        </dl>
+                                    </section>
+                                </div>
+                                <p class="menu-footnote">
+                                    ※メニュー・価格は仕入れ状況等により変更となる場合があります。
+                                </p>
+                            </section>
+                                
+
+        <!-- ドリンク（新規） -->
+        <section id="panel-drink" class="tab-panel" role="tabpanel">
+            <div class="menu-grid-2col">
+            <section class="menu-card">
+            <h2 class="menu-card-title">ビール</h2>
+            <dl class="menu-dl">
+                <div class="menu-row">
+                <dt>サッポロ赤星（中瓶）</dt>
+                <dd>¥700</dd>
+                </div>
+                <div class="menu-row">
+                <dt>オールフリー</dt>
+                <dd>¥600</dd>
+                </div>
+            </dl>
+            </section>
+
+            <section class="menu-card">
+            <h2 class="menu-card-title">スピリッツ</h2>
+            <dl class="menu-dl">
+                <div class="menu-row">
+                <dt>クラフトレモンサワー</dt>
+                <dd>¥800</dd>
+                </div>
+                <div class="menu-row">
+                <dt>ジャスミンハイボール</dt>
+                <dd>¥800</dd>
+                </div>
+            </dl>
+            </section>
+
+            <section class="menu-card">
+            <h2 class="menu-card-title">お茶ハイ</h2>
+            <dl class="menu-dl">
+                <div class="menu-row">
+                <dt>黒ウーロンハイ</dt>
+                <dd>¥900</dd>
+                </div>
+                <div class="menu-row">
+                <dt>緑茶ハイ</dt>
+                <dd>¥700</dd>
+                </div>
+                <div class="menu-row">
+                <dt>ジャスミンハイ</dt>
+                <dd>¥700</dd>
+                </div>
+            </dl>
+            </section>
+
+            <section class="menu-card">
+            <h2 class="menu-card-title">焼酎・スパイス</h2>
+            <dl class="menu-dl">
+                <div class="menu-row">
+                <dt>カルダモン焼酎（米）</dt>
+                <dd>¥800</dd>
+                </div>
+                <div class="menu-row">
+                <dt>AKAYANE白麹（芋）</dt>
+                <dd>¥900</dd>
+                </div>
+                <div class="menu-row">
+                <dt>佐藤（黒・白・麦 各種）</dt>
+                <dd>¥900</dd>
+                </div>
+            </dl>
+            </section>
+
+            <section class="menu-card menu-card--full">
+            <h2 class="menu-card-title">クラフトジン</h2>
+            <dl class="menu-dl">
+                <div class="menu-row">
+                <dt>HOLON 金木犀</dt>
+                <dd>¥1,200</dd>
+                </div>
+                <div class="menu-row">
+                <dt>HOLON 薫柑</dt>
+                <dd>¥1,200</dd>
+                </div>
+                <div class="menu-row">
+                <dt>ENGINE organic</dt>
+                <dd>¥900</dd>
+                </div>
+                <div class="menu-row">
+                <dt>KOMASA 桜島小みかん</dt>
+                <dd>¥900</dd>
+                </div>
+                <div class="menu-row">
+                <dt>KOMASA ほうじ茶</dt>
+                <dd>¥900</dd>
+                </div>
+                <div class="menu-row">
+                <dt>KOMASA 苺</dt>
+                <dd>¥900</dd>
+                </div>
+                <div class="menu-row">
+                <dt>MONKEY 47</dt>
+                <dd>¥1,200</dd>
+                </div>
+                <div class="menu-row">
+                <dt>No.8</dt>
+                <dd>¥900</dd>
+                </div>
+                <div class="menu-row">
+                <dt>EMPRESS1908</dt>
+                <dd>¥900</dd>
+                </div>
+                <div class="menu-row">
+                <dt>BOBBY’S</dt>
+                <dd>¥800</dd>
+                </div>
+                <div class="menu-row">
+                <dt>季の美</dt>
+                <dd>¥800</dd>
+                </div>
+                <div class="menu-row">
+                <dt>サイレントプール</dt>
+                <dd>¥800</dd>
+                </div>
+            </dl>
+            </section>
+
+            <section class="menu-card menu-card--full">
+            <h2 class="menu-card-title">ウイスキー</h2>
+            <dl class="menu-dl">
+                <div class="menu-row">
+                <dt>角ハイボール</dt>
+                <dd>¥582</dd>
+                </div>
+                <div class="menu-row">
+                <dt>キリン陸ハイボール</dt>
+                <dd>¥700</dd>
+                </div>
+                <div class="menu-row">
+                <dt>山崎</dt>
+                <dd>¥1,200</dd>
+                </div>
+                <div class="menu-row">
+                <dt>白州</dt>
+                <dd>¥1,200</dd>
+                </div>
+                <div class="menu-row">
+                <dt>響 Japanese Harmony</dt>
+                <dd>¥1,200</dd>
+                </div>
+                <div class="menu-row">
+                <dt>知多</dt>
+                <dd>¥950</dd>
+                </div>
+                <div class="menu-row">
+                <dt>宮城峡</dt>
+                <dd>¥1,000</dd>
+                </div>
+                <div class="menu-row">
+                <dt>余市</dt>
+                <dd>¥1,000</dd>
+                </div>
+                <div class="menu-row">
+                <dt>Maker’s Mark</dt>
+                <dd>¥800</dd>
+                </div>
+                <div class="menu-row">
+                <dt>BOWMORE 12Years</dt>
+                <dd>¥900</dd>
+                </div>
+            </dl>
+            </section>
+
+            <section class="menu-card">
+            <h2 class="menu-card-title">日本酒</h2>
+            <ul class="menu-note-list">
+                <li>AKABU（岩手）</li>
+                <li>紀土（和歌山）</li>
+                <li>鍋島（佐賀）</li>
+                <li>飛鸞（長崎）</li>
+                <li>山本（秋田）</li>
+                <li>日日（京都）</li>
+                <li>産土（熊本）</li>
+                <li>光栄菊（佐賀）など</li>
+            </ul>
+            <p class="menu-note">
+                ※仕入れ状況によりラインナップが異なります。価格はスタッフまで。
+            </p>
+            </section>
+
+            <section class="menu-card">
+            <h2 class="menu-card-title">ワイン</h2>
+            <ul class="menu-note-list">
+                <li>Sauvignon Blanc / Cabernet Sauvignon</li>
+                <li>Chardonnay / Pinot Noir</li>
+                <li>Riesling / Syrah / Merlot</li>
+            </ul>
+            <p class="menu-note">
+                ※鉄板焼きに合うワインをご用意しています。価格はスタッフまで。
+            </p>
+            </section>
+
+            <section class="menu-card">
+            <h2 class="menu-card-title">ソフトドリンク（ALL ¥500）</h2>
+            <dl class="menu-dl">
+                <div class="menu-row">
+                <dt>自家製レモンスカッシュ</dt>
+                <dd>¥500</dd>
+                </div>
+                <div class="menu-row">
+                <dt>コカ・コーラ</dt>
+                <dd>¥500</dd>
+                </div>
+                <div class="menu-row">
+                <dt>ジンジャーエール</dt>
+                <dd>¥500</dd>
+                </div>
+                <div class="menu-row">
+                <dt>ジャスミンティー</dt>
+                <dd>¥500</dd>
+                </div>
+                <div class="menu-row">
+                <dt>トニック</dt>
+                <dd>¥500</dd>
+                </div>
+                <div class="menu-row">
+                <dt>オレンジジュース</dt>
+                <dd>¥500</dd>
+                </div>
+                <div class="menu-row">
+                <dt>緑茶</dt>
+                <dd>¥500</dd>
+                </div>
+                <div class="menu-row">
+                <dt>黒烏龍茶</dt>
+                <dd>¥500</dd>
+                </div>
+            </dl>
+            </section>
+        </div>
+        <p class="menu-footnote">
+            ※メニュー・価格は仕入れ状況等により変更となる場合があります。
+        </p>
+    </section>
+    </div>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container footer-inner">
+        <small>© 2026 米粉と鉄板. All Rights Reserved.</small>
+    </div>
+    </footer>
+</body>
+</html>

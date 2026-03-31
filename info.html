@@ -1,0 +1,149 @@
+<!-- info.html -->
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>店舗情報｜米粉と鉄板</title>
+    <meta
+      name="description"
+      content="米粉と鉄板の店舗情報。住所、電話番号、支払い方法、アクセスなど。"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">本文へスキップ</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="site-logo">
+          <a class="brand" href="index.html" aria-label="トップへ">
+            <img class="brand-mark" src="images/logo.jpg" alt="米粉と鉄板" />
+            <span class="brand-name">米粉と鉄板</span>
+          </a>
+        </div>
+
+        <nav class="site-nav" aria-label="グローバルナビゲーション">
+          <a class="nav-link" href="index.html">こだわり</a>
+          <a class="nav-link" href="menu.html">メニュー</a>
+          <a class="nav-link" href="hours.html">営業時間</a>
+          <a class="nav-link" href="info.html" aria-current="page">店舗情報</a>
+          <a class="nav-link" href="news.html">お知らせ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <!-- 写真（外観／内観） -->
+          <section class="store-photos" aria-labelledby="photos-title">
+            <div class="container">
+              <div class="photo-grid">
+                <article class="photo-card">
+                  <h3 class="photo-card__title">外観写真</h3>
+                  <figure class="photo">
+                    <img
+                      src="images/外観写真.jpg"
+                      alt="店舗の外観（黒い外壁と看板）"
+                      loading="lazy"
+                    />
+                    <figcaption class="photo__cap">
+                      目印：黒い外壁／小さめの看板
+                    </figcaption>
+                  </figure>
+                </article>
+                <article class="photo-card">
+                  <h3 class="photo-card__title">内観写真</h3>
+                  <figure class="photo">
+                    <img
+                      src="images/DSC06476.JPG"
+                      alt="店舗の内観（鉄板カウンターと座席）"
+                      loading="lazy"
+                    />
+                    <figcaption class="photo__cap">
+                      鉄板カウンター
+                    <img
+                      src="images/DSC06498.JPG"
+                      alt="店舗の内観（鉄板カウンターと座席）"
+                      loading="lazy"
+                    />
+                    <figcaption class="photo__cap">
+                      テーブル席
+                    </figcaption>
+                  </figure>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ -->
+          <section id="faq" class="store-faq" aria-labelledby="faq-title">
+            <div class="container">
+              <h2 id="faq-title" class="section-title">よくある質問</h2>
+
+              <div class="faq">
+                <details class="faq-item">
+                  <summary class="faq-item__q">お店が見つかりません。</summary>
+                  <div class="faq-item__a">
+                    <p>
+                      店舗は2階にあります。<br />
+                      「◯◯コンビニ」まで来たらお電話ください。外観写真の位置からご案内します。
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-item__q">
+                    駅からどれくらいかかりますか？
+                  </summary>
+                  <div class="faq-item__a">
+                    <p>
+                      学芸大学駅から徒歩約4分です。<br />
+                      写真付きのルート案内を店舗ページ上部に掲載しています。
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-item__q">
+                    駐車場・駐輪場はありますか？
+                  </summary>
+                  <div class="faq-item__a">
+                    <p>
+                      専用の駐車場・駐輪場はありません。<br />
+                      近隣のコインパーキング・駐輪場をご利用ください。
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-item__q">
+                    混みやすい時間帯はいつですか？
+                  </summary>
+                  <div class="faq-item__a">
+                    <p>
+                      19:00〜21:00は混みやすい時間帯です。<br />
+                      ご来店が決まっている場合は、事前のご予約・お電話をおすすめします。
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© 2026 米粉と鉄板. All Rights Reserved.</small>
+        <div class="footer-links">
+          <a href="news.html">お知らせ</a>
+          <a href="info.html">店舗情報</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
