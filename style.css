@@ -1049,27 +1049,27 @@ button:focus-visible {
 .splash {
   position: fixed;
   inset: 0;
-  background: var(--bg);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9000;
   pointer-events: none;
-  animation: splashFade 0.6s ease 2.8s forwards;
+  animation: splashFade 1.2s ease 2.5s forwards;
 }
 
 .splash-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  animation: splashFloat 0.8s cubic-bezier(0.2, 0.8, 0.3, 1) 0.2s both;
+  gap: 16px;
+  animation: splashFloat 0.9s cubic-bezier(0.2, 0.8, 0.3, 1) 0.1s both;
 }
 
 .splash-logo img {
-  width: 72px;
-  height: 72px;
-  border: 1px solid var(--line);
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 0 !important;
 }
 
@@ -1078,15 +1078,14 @@ button:focus-visible {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.18em;
-  color: var(--text);
+  color: #1a1a1a;
 }
 
 .splash-sub {
-  font-size: 12px;
-  letter-spacing: 0.22em;
-  color: var(--amber);
-  opacity: 0.8;
-  margin: 4px 0 0;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: #888;
+  margin: 0;
 }
 
 .menu-top-grid {
@@ -1148,7 +1147,7 @@ button:focus-visible {
 @keyframes splashFloat {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -1158,6 +1157,7 @@ button:focus-visible {
 @keyframes splashFade {
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
 .splash-done .splash {
